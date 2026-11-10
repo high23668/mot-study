@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoT 財務ドリル</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="css/app.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <a class="brand" href="#/">MoT <span>財務ドリル</span></a>
+  <nav class="nav" id="nav"></nav>
+</div></header>
+<main id="app"></main>
+<div class="toast" id="toast"></div>
+
+<!-- ドメイン層・インフラ層・表示の共通部品 -->
+<script src="js/domain.js"></script>
+<script src="js/infra.js"></script>
+<script src="js/view.js"></script>
+
+<!-- 教材データ（全章共通の例 → 各章） -->
+<script src="data/case.js"></script>
+<script src="data/chapter-A.js"></script>
+<script src="data/chapter-B.js"></script>
+<script src="data/chapter-C.js"></script>
+<script src="data/chapter-D.js"></script>
+<script src="data/chapter-E.js"></script>
+<script src="data/chapter-F.js"></script>
+
+<!-- ケーススタディ（共通定義 → 各ストーリー） -->
+<script src="data/stories/_common.js"></script>
+<script src="data/stories/story-S1.js"></script>
+
+
+<!-- 章ごとのシミュレーター -->
+<script src="js/sims/sim-A.js"></script>
+<script src="js/sims/sim-B.js"></script>
+<script src="js/sims/sim-C.js"></script>
+<script src="js/sims/sim-D.js"></script>
+<script src="js/sims/sim-E.js"></script>
+<script src="js/sims/sim-F.js"></script>
+
+<!-- ケーススタディの画面 -->
+<script src="js/story.js"></script>
+
+
+<!-- アプリ層（画面とルーティング） -->
+<script src="js/app.js"></script>
+</body>
+</html>
